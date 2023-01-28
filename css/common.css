@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*сжимается внутренний контент под общий размер*/
+}
+
+body {
+    font-family: 'Montserrat';
+    font-style: normal; /*жирный, наклонный или др*/
+    font-size: 14px;
+    line-height: 19px; /*межстрочный интервал*/
+    color: #1E0606;
+}
+
+a {
+    /*list-style: none; /*убирает маркер списка точку?*/
+    text-decoration: none; /*убирает подчеркивание*/
+    /* color: none; */
+}
+
+img {
+    display: block; /* блочные элементы, можем задать высоту и ширину*/
+    max-width: 100%;
+}
+
+.container { /*проставить во всех секциях, дивах, отодвигает от края*/
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none; /*прописать во всех списках li, убирает точку в списках*/
+}
+
+button {
+    border: none;
+}
+
+/* стилизация хедера */
+
+.header {
+    display: flex; /*задает блок*/
+    margin-top: 50px; /*отступ сверху*/
+    margin-bottom: 128px;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__logo {
+    margin-right: 60px; /*отступ от лого вправо до меню*/
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__list-link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-right: 20px;
+}
+
+.header__list-linksec {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-right: 20px;
+}
+
+.search {
+    margin-right: 24px;
+}
+
+.left {
+    margin-right: auto; /*толкает второй список во флексе к правому полю*/
+}
+
+/* стилизация хедера окончена*/
+
+.link__info {
+    padding: 9px 22px 9px 22px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    width: 123px;
+    height: 40px;
+    left: 140px;
+    top: 2230px;
+    background: #000000;
+}
+
+.btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+    padding: 9px 22px;
+    background: #000;
+   /* width: 161px;
+    height: 40px;
+    left: 243px;
+    top: 474px;*/
+}
+
+/* стилизация футера */
+
+.footerbackgr {
+    background-color: #434343;
+}
+
+.footer__nav {
+    display: flex;
+    padding-top: 100px;
+}
+
+.bor__bot {
+    border-bottom: 380px solid #666666;
+    border-width: 1px;
+    padding-bottom: 23px;
+    width: 380px;
+}
+
+.bor__botsec {
+    border-bottom: 380px solid #666666;
+    border-width: 1px;
+    padding-bottom: 23px;
+    width: 1180px;
+}
+
+.navcuscon {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #AAAAAA;
+}  
+
+.foot__marbot {
+    margin-bottom: 15px;
+}
+
+.foot__mt {
+    margin-top: 28px;
+}
+
+.foot__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.foot__mb {
+    margin-bottom: 28px;
+}
+
+.foot__secul__pad {
+    padding-left: 19px;
+}
+
+.footer__navsec {
+    display: flex;
+    border-top: 1px solid #666666;
+    padding-top: 23px;
+}
+
+.ul__footer {
+    display: flex;
+    padding-top: 28px;
+}
+
+.footer__oa {
+    margin-left: 242px;
+}
+
+.foot__mail__block {
+    display: flex;
+    flex-direction: row;
+    padding-left: 21px;
+}
+
+.foot__mail__input {
+    width: 299px;
+    height: 40px;
+    border: none;
+    background: #666666;
+}
+
+.foot__input__btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #000000;
+    padding: 7px 20px;
+}
+
+.icons__footer {
+    display: flex;
+    padding-top: 22px;
+    gap: 10px;
+    padding-left: 22px;
+}
+
+
+.foot__connect__nav {
+    padding-left: 21px;
+}
+
+.foot__copymar {
+    margin-left: 182px;
+    margin-right: 109px;
+    padding-bottom: 100px;
+}
+
+.foot__comprate__li {
+    display: flex;
+    gap: 0px 25px;
+}
+
+/* стилизация футера окончена */
+
+/* company rating */
+
+.simple__rating {
+    position: relative;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.simple__rating::before {
+    content: "★★★★★";
+    display: block;
+}
+
+.simple-rating__items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.simple-rating__item {
+    position: absolute;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.simple-rating__label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #fff;
+}
+
+.simple-rating__label::before {
+    content: "★";
+    display: block;
+    transition: color #836E5B;
+}
+
+.simple-rating__label:hover,
+.simple-rating__label:hover ~ .simple-rating__label,
+.simple-rating__label:checked ~ .simple-rating__label:hover {
+    color: #836E5B;
+}
+
+.simple-rating__item:checked,
+.simple-rating__item:checked ~ .simple-rating__label {
+    color: #C29974;
+}
+
+/* end COMPANY RATING */
+
+
+
+/* FORM */
+
+.popup {
+    display: none;
+    top: 25%;
+    left: 30%;
+    position: absolute;
+}
+
+.open {
+    display: flex;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: #7D97DACC;
+}
+ 
+.popup__wr {
+    display: flex;
+    z-index: 20;
+}
+
+.close {
+    background: none;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/icon/close.svg');
+    border: none;
+}
+
+.contact__form {
+    max-width: 680px;
+    background: #E5EAF8;
+    padding: 20px 40px 42px 40px;
+}
+
+.input__element {
+    display: flex;
+    gap: 20px;
+}
+
+.label__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contact__label {
+    margin-bottom: 3px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+}
+
+.contact__input {
+    /* max-width: 600px; */
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.contact__input::placeholder {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+    padding: 20px;
+}
+
+.contact__input-two {
+    width: 290px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.checkbox_position {
+    margin-top: 20px;
+}
+
+.checkbox_input {
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+}
+
+.checkbox__label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    margin-left: 20px;
+}
+
+.checkbox__label::before {
+    content: "";
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-image: url("../img/icon/input.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+}
+
+.checkbox_input:checked + .checkbox__label::before {
+    content: "";
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-image: url("../img/icon/checked.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+}
+
+.btn__submit {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 9px 22px;
+    margin-top: 17px;
+    background: #000000;
+}
+
+/* END FORM */
+
+
+
+
+

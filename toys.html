@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap'); </style>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/toys.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Toys</title>
+</head>
+<body>
+    <header class="header container">
+        <a href="/index.html"><img class="header__logo" src="./img/icon/logo.png" alt="Logo" width="101" height="52"></a>
+        <nav class="header__nav left">
+          <ul class="header__list">
+           <li><a href="/blog.html" style="font-family: Open Sans;" class="header__list-link">BLOG</a></li> 
+           <li><a href="/catalog.html" style="font-family: Open Sans;" class="header__list-link">CATALOG</a></li><!--я перепроперил все подряд не получается почему-то переходить с основы на каталог посмотри что не так просто я уже не знаю что делать-->
+           <li><a href="/about-us.html" style="font-family: Open Sans;" class="header__list-link">ABOUT US</a></li>           
+          </ul>
+        </nav>
+          <ul class="header__list header__nav">
+            <li><a href="#"><img class="search" src="./img/icon/search.svg" alt="search"></a></li>
+            <li><a href="/contact-us.html" class="header__list-link">CONTACT US</a></li>
+          </ul>
+    </header>
+    <main>
+    <h1 class="toy__for__kids container">Toy for kids</h1>
+    <ul class="container breadcrumbs">
+        <li><a href="/index.html">Home</a></li>
+        <li><img src="./img/rightsec.svg" alt="Right arrow" width="8" height="12"></li>
+        <li><a href="/сatalog.html">Catalog</a></li>
+        <li><img src="./img/right.svg" alt="Right arrow" width="8" height="12"></li>
+        <li>Toys</li>
+    </ul>
+        <h2 class="h__two__op">Filter</h2><!--его надо будет скрыть так так его нет в дизайне-->
+        <div class="filter__block">
+            <form class="filter__list container" action="">
+                <fieldset class="range">
+                    <label class="title__range" for="Cost">Cost</label>
+                    <input type="range" name="Cost" id="Cost" min="0" max="500" step="1" value="100">
+                    <div class="range_item">
+                        <label for="0">0</label>
+                        <label for="500">500</label>
+                    </div>
+                </fieldset>
+                 <fieldset class="color__filter">
+                    <legend class="title__color">Color</legend>
+                    <ul class="color__list">
+                        <li>
+                            <input class="checkbox_input" id="checkbox1" type="checkbox"> 
+                            <label class="checkbox__label black" for="checkbox1">Black</label>
+                        </li>
+                        <li>
+                             <input class="checkbox_input" id="checkbox2" type="checkbox"> 
+                            <label class="checkbox__label blue" for="checkbox2">Blue</label>
+                        </li>
+                           <li>
+                             <input class="checkbox_input" id="checkbox3" type="checkbox"> 
+                             <label class="checkbox__label green" for="checkbox3">Green</label>
+                         </li>
+                         <li>
+                             <input class="checkbox_input" id="checkbox4" type="checkbox"> 
+                             <label class="checkbox__label white" for="checkbox4">White</label>
+                         </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="delivery__filter">
+                    <legend class="title__delivery">Delivery</legend>
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="category" value="free" class="real-radio" checked>
+                            <span class="custom-radio"></span>
+                            Free shipping
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="category" value="fast" class="real-radio">
+                            <span class="custom-radio"></span>
+                            Fast shipping
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="amount__filter">
+                     <legend class="title__amount">Amount</legend>
+                     <ul class="amount__list">
+                        <li class="amound-bg">
+                            <input class="amount__input" type="radio" name="level" value="0-5" id="first" checked>
+                            <label class="amount-label" for="first">
+                                0-5
+                            </label>
+                        </li>
+                        <li class="amound-bg">
+                            <input class="amount__input" type="radio" name="level" value="10-20" id="second">
+                            <label class="amount-label" for="second">
+                                10-20
+                            </label>
+                        </li>
+                        <li class="amound-bg">
+                            <input class="amount__input" type="radio" name="level" value="20-50" id="third">
+                            <label class="amount-label" for="third">
+                                20-50
+                            </label>
+                        </li>
+                     </ul>
+                 </fieldset>
+                <button type="button" class="btn__filter">APPLY</button>
+            </form>
+        </div>
+    </main>
+    <section class="container">
+        <ul>
+        <ul class="for__scroll">
+        <ul class="for__ul__cell">
+            <li><img src="./img/sharkcover.jpg" alt="Shark chair cover" width="380" height="385"></li>
+            <li class="for__name__li"><a href="#">SHARKY BEAN BAG CHAIR COVER</a></li>
+            <li class="for__name__lisec">$60.00 USD</li>
+        </ul>
+        <ul class="for__ul__cell">
+            <li><img src="./img/brassframes.jpg" alt="Brass deco frames" width="380" height="385"></li>
+            <li class="for__name__li"><a href="#">BRASS DECO FRAMES</a></li>
+            <li class="for__name__lisec">$66.00 USD</li>
+        </ul>
+        <ul class="for__ul__cell">
+            <li><img src="./img/fullapron.jpg" alt="Full apron CIBO" width="380" height="385"></li>
+            <li class="for__name__li"><a href="#">CIBO FULL APRON</a></li>
+            <li class="for__name__lisec">$60.00 USD</li>
+        </ul>
+        </ul>
+        <ul class="for__scroll">
+        <ul class="for__ul__cell">
+            <li><img src="./img/gumballmachine.jpg" alt="Gumball machine" width="380" height="385"></li>
+            <li class="for__name__li"><a href="#">GATCHA GATCHA GUMBALL MACHINE</a></li>
+            <li class="for__name__lisec">$56.00 USD</li>
+        </ul>
+        <ul class="for__ul__cell">
+            <li><img src="./img/scentedcandle.jpg" alt="Christmas scented candle" width="380" height="385"></li>
+            <li class="for__name__li"><a href="#">CHRISTMAS ADVENT SCENTED CANDLE</a></li>
+            <li class="for__name__lisec">$29.00 USD</li>
+        </ul>
+        <ul class="for__ul__cell">
+            <li><img src="./img/tealight.jpg" alt="Tea light" width="380" height="382"></li>
+            <li class="for__name__li"><a href="#">TANGLE SPINNING TEA LIGHT</a></li>
+            <li class="for__name__lisec">$56.00 USD</li>
+        </ul>
+        </ul>
+        <ul class="container inc__ul">
+            <li><button class="for__arrow__left" type="button"></button></li>
+        <ul class="number__page">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+            <li><button class="for__arrow__right" type="button"></button></li>
+        </ul>
+    </section>
+    <footer class="footerbackgr">
+        <nav>
+            <div class="footer__nav container">
+            <ul>
+                <li class="bor__bot"><p class="navcuscon">Navigation</p></li>
+                <li class="foot__marbot foot__mt"><a class="foot__text" href="/about-us.html">About Us</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="/blog.html">Blog</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Design Services</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Featured On</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">2018 Holiday Catalog</a></li>
+                <li class="foot__mb"><a class="foot__text" href="#">Shop By Designer</a></li>                
+            </ul>
+            <ul class="foot__secul__pad">
+                <li class="bor__bot"><p class="navcuscon">Customer Information</p></li>
+                <li class="foot__marbot foot__mt"><a class="foot__text" href="/contact.html">Contact Us</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Sale Exclusions</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Shipping & Returns</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Terms & Conditions</a></li>
+                <li class="foot__marbot"><a class="foot__text" href="#">Privacy Policy</a></li>
+                <li class="foot__marbot foot__mb"><a class="foot__text" href="#">Search</a></li>               
+            </ul>
+        <ul class="">
+            <li class="bor__bot foot__connect__nav"><p class="navcuscon">Connect</p></li>
+            <li>        
+                <div class="foot__mail__block foot__mt">  
+            <input class="mail__input" type="text" name="text" placeholder="Email">  
+            <button class="input__btn" type="submit">JOIN</button>  
+        </div>
+        <div>
+            <ul class="icons__footer">
+                <li><a href="https://www.facebook.com/"><img src="./img/icon/facebook.svg" alt="FB" width="30" height="30"></a></li>
+                <li><a href="https://twimg.com/"><img src="./img/icon/twitter.svg" alt="Twitter" width="30" height="30"></a></li>
+                <li><a href="https://pinterest.com/"><img src="./img/icon/pinterest.svg" alt="Pinterest" width="30" height="30"></a></li>
+                <li><a href="http://instagram.com/"><img src="./img/icon/instagram.svg" alt="Instagram" width="30" height="30"></a></li>
+            </ul>
+        </div>
+        </ul>
+        </nav>
+        </div>
+        <ul class="container footer__navsec">
+            <li>
+                <div class="container finish">
+                <div class="form__item foot__comprate__li">
+                    <div class="form__label foot__text">Company Rating</div>
+                    <div class="simple__rating">
+                        <div class="simple-rating__items">
+                            <input id="simple-rating-5" type="radio" class="simple-rating__item" name="simple-rating" value="5">
+                            <label for="simple-rating-5" class="simple-rating__label"></label>
+                            <input id="simple-rating-4" type="radio" class="simple-rating__item" name="simple-rating" value="4">
+                            <label for="simple-rating-4" class="simple-rating__label"></label>
+                            <input id="simple-rating-3" type="radio" class="simple-rating__item" name="simple-rating" value="3">
+                            <label for="simple-rating-3" class="simple-rating__label"></label>
+                            <input id="simple-rating-2" type="radio" class="simple-rating__item" name="simple-rating" value="2">
+                            <label for="simple-rating-2" class="simple-rating__label"></label>
+                            <input id="simple-rating-1" type="radio" class="simple-rating__item" name="simple-rating" value="1">
+                            <label for="simple-rating-1" class="simple-rating__label"></label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="bordersec foot__copymar">
+            <a class="foot__text" href="#">Copyright © 2018 Dlk • Design Life Kids</a>
+            </li>
+            <li>
+                <a class="navcuscon" href="#">Web Design — Direct Line Development</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

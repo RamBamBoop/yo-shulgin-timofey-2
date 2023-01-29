@@ -60,6 +60,10 @@
     height: 100px;
 }
 
+.martsev {
+    margin-top: 7px;
+}
+
 .blogh {
     font-family: 'Montserrat';
     font-style: normal;
@@ -68,6 +72,8 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #1E0606;
+    margin-top: -68px;
+    margin-bottom: 13px;
 }
 
 .crimtext {

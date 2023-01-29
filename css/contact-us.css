@@ -33,8 +33,9 @@
 }
 
 .firstgap {
-    gap: 20px;
-    margin-bottom: 56px;
+    gap: 16px;
+    margin-bottom: 53px;
+    margin-top: -12px;
 }
 
 .backgrfield {
@@ -84,6 +85,7 @@
 
 .marli {
     margin-bottom: 20px;
+    margin-top: -2px;
 }
 
 .headersec {

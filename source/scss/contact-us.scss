@@ -1,0 +1,104 @@
+.forhone {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;   
+    color: #1E0606;
+}  
+
+.forhome {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #1E0606;
+}
+
+.forcontactus {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #1E0606;
+    opacity: 0.5;
+}
+
+.displayflex {
+    display: flex;
+}
+
+.firstgap {
+    gap: 16px;
+    margin-bottom: 53px;
+    margin-top: -12px;
+}
+
+.backgrfield {
+    background: #E5EAF8;
+}
+
+.form__border {
+    border: none;
+}
+
+.form__column {
+    flex-direction: column;
+}
+
+.email__phone {
+    display: flex;
+}
+
+.form__mar {
+    margin-bottom: 60px;
+}
+
+.main__sec {
+    display: flex;
+    gap: 20px 120px;
+}
+
+.firstli {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1E0606;
+}
+
+.thirdli {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #C29974;
+    width: 380px;
+}
+
+.marli {
+    margin-bottom: 20px;
+    margin-top: -2px;
+}
+
+.headersec {
+    display: flex; /*задает блок*/
+    margin-top: 50px; /*отступ сверху*/
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.brcrri {
+    border: none;
+}
+
+.martsev {
+    margin-top: 7px;
+}

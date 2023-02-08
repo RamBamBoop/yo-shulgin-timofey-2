@@ -178,7 +178,7 @@
     position: absolute;
     top: 732px;
     left: -252px;
-    animation: fourcar 3s ease-in 1s infinite ;
+    animation: fourcar 3s ease-in 1s infinite;
 }
 
 @keyframes fourcar {
@@ -194,7 +194,7 @@
     position: absolute;
     top: 728px;
     left: 1800px;
-    animation: taxicar 6s ease-in 3s 1;
+    animation: taxicar 6s ease-in 5s 1;
 }
 
 @keyframes taxicar {
@@ -223,7 +223,7 @@
     top: 641px;
     left: 178px;
     opacity: 0%;
-    animation: wommess 4s ease-in 0s 1;
+    animation: wommess 4s ease-in 2s 1;
 }
 
 @keyframes wommess {
@@ -243,7 +243,7 @@
         opacity: 100%;
     }
     70% {
-        opacity: 50%;
+        opacity: 0%;
     }
     100% {
         opacity: 0%;
@@ -255,7 +255,7 @@
     position: absolute;
     top: 646px;
     opacity: 0%;
-    animation: taximess 6s ease-in 4s 1;
+    animation: taximess 6s ease-in 6s 1;
 }
 
 @keyframes taximess {
@@ -287,10 +287,11 @@
 
 .animation__man__mess {   
     position: absolute;
-   left: 366px;
+    left: 366px;
     top: 575px; 
     opacity: 0%;
-    animation: manmess 3s ease-in 2s 1;
+    animation: manmess 3s ease-in 4s 1;
+    z-index: 1;
 }
 
 @keyframes manmess {
@@ -312,19 +313,25 @@
     position: absolute;
     left: 397px;
     top: 608px;
-    animation: manhand 3s ease-in 2s 1;
-    transform: rotateZ(119deg);
-    transform-origin: 0% 100%;
+    animation: manhand 4s ease-in 4s 1;
+    transform: rotateZ(122deg);
+    transform-origin:  0% 100%;
 }
 
 @keyframes manhand {
     0% {
         transform: rotateZ(119deg); 
     }
+    30% {
+        transform: rotateZ(0deg); 
+    }
     50% {
         transform: rotateZ(0deg); 
     }
     70% {
+        transform: rotateZ(0deg); 
+    }
+    85% {
         transform: rotateZ(0deg); 
     }
     100% {

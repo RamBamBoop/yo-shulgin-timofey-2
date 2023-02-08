@@ -338,3 +338,30 @@
         transform: rotate(120deg); 
     }
 }
+
+.animation__woman__hands {
+    left: 303px;
+    position: absolute;
+    top: 866px;
+    z-index: 1;
+    animation: womhand 2s ease-in 2s 1;
+    transform-origin: 0% 0%;
+}
+
+@keyframes womhand {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    35% {
+        transform: rotateZ(-70deg);
+    }
+    50% {
+        transform: rotateZ(-70deg);
+    }
+    68% {
+        transform: rotateZ(-70deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}

@@ -2,15 +2,16 @@
         <a href="/index.html"><img class="header__logo" src="./img/icon/logo.png" alt="Logo" width="101" height="52"></a>
         <nav class="header__nav left">
           <ul class="header__list">
-           <li><a href="/blog.html" style="font-family: Open Sans;" class="header__list-link">BLOG</a></li> 
-           <li><a href="/catalog.html" style="font-family: Open Sans;" class="header__list-link">CATALOG</a></li><!--я перепроперил все подряд не получается почему-то переходить с основы на каталог посмотри что не так просто я уже не знаю что делать-->
-           <li><a href="/contact-us.html" style="font-family: Open Sans;" class="header__list-link">ABOUT US</a></li>   
-           <li><a href="/animation.html" style="font-family: Open Sans;" class="header__list-link">ANIMATION</a></li>  
-           <li><a href="/svg.html" style="font-family: Open Sans;" class="header__list-link">SVG</a></li>                                    
+           <li class="header__navigate"><a href="/catalog.html" style="font-family: Open Sans;" class="header__list-link__catalog">CATALOG</a></li>
+           <li class="header__navigate"><a href="/contact-us.html" style="font-family: Open Sans;" class="header__list-link__about">ABOUT US</a></li>
+           <li class="header__navigate"><a href="/blog.html" style="font-family: Open Sans;" class="header__list-link__blog">BLOG</a></li>
+           <li class="header__navigate"><a href="/animation.html" style="font-family: Open Sans;" class="header__list-link__animation">ANIMATION</a></li>  
+           <li class="header__navigate"><a href="/svg.html" style="font-family: Open Sans;" class="header__list-link__svg">SVG</a></li>                                    
           </ul>
-        </nav>
+          <button class="header__menu" type="button">MENU</button>
+            <a href="#"><img class="search" src="./img/icon/search.svg" alt="search"></a>
           <ul class="header__list header__nav">
-            <li><a href="#"><img class="search" src="./img/icon/search.svg" alt="search"></a></li>
-            <li><a href="/contact-us.html" class="header__list-link">CONTACT US</a></li>
-          </ul>
+            <li class="header__navigate"><a href="/contact-us.html" class="header__list-link__contact">CONTACT US</a></li>
+          </ul>          
+        </nav>
 </header>

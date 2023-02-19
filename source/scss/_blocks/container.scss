@@ -23,15 +23,15 @@ img {
   max-width: 100%;
 }
 
-.container { /*проставить во всех секциях, дивах, отодвигает от края*/
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
 li {
   list-style-type: none; /*прописать во всех списках li, убирает точку в списках*/
 }
 
 button {
   border: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
 }

@@ -45,15 +45,18 @@
 */
 
 .banner {
-  /*margin-top: 128px;*/
-  /* margin-bottom: 90px; */
-  /*background-image: url(../img/monster.png);
-  position: relative;*/
-  background: #EEE4DB;
+  margin-top: 128px;
+  margin-bottom: 90px;
+  background-image: url(../img/monster.png);
+  position: relative;
+  background-color: #000;
 }
 
 .banner__inner {
   padding-left: 132px;
+  @media (min-width: 375px) and (max-width: 768px) {
+    padding-left: 55px;
+  }
 }
 
 .title {
@@ -83,6 +86,33 @@
   height: 461px;
   left: 444px;
   top: -171px;
+  @media (min-width: 0px) and (max-width: 768px) {
+    width: 385px;
+    height: 286px;
+    left: 228px;
+    position: absolute;
+    top: 4px;
+  }
+}
+
+html {
+  width: auto;
+}
+
+.banner__under__text {
+  width: 458px;
+  height: 17px;
+  @media (min-width: 0px) and (max-width: 768px) {
+    width: 648px;
+  }
+}
+
+.banner__section__backgr {
+  background-color: #EEE4DB;
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: 648px;
+    height: 411px;
+  }
 }
 
 .utp {
@@ -96,11 +126,14 @@
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  @media (min-width: 375px) and (max-width: 768px) {
+    padding-top: 11px;
+    padding-left: 0px;
+  }
 }
 
 .category__list {
   display: flex;
-
 }
 
 .p__one {
@@ -112,11 +145,23 @@
   font-size: 60px;
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
+  @media (min-width: 375px) and (max-width: 768px) {
+    padding-left: 0;
+  }
+}
+
+.main__adaptive__container {
+  @media (min-width: 375px) and (max-width: 768px) {
+    margin-left: 60px;
+  }
 }
 
 .btn__block{
   /* padding-top: 10px; */
   padding-left: 32px;
+  @media (min-width: 375px) and (max-width: 768px) {
+    padding-left: 0;
+  }
 }
 
 .btn__line {
@@ -129,13 +174,14 @@
   width: 307px;
 }
 
-/* .catprodds {
-  margin-top: 90px;
-} */
-
 .pupa {
   display: flex;
   gap: 25px;
+}
+
+.main__productions__holshop {
+  width: 155px;
+  height: 64px;
 }
 
 .pupaarrow {

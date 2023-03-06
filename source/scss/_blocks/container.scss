@@ -34,4 +34,10 @@ button {
 .container {
   max-width: 1180px;
   margin: 0 auto;
+  @media (min-width: 375px) and (max-width: 768px) {
+    margin-left: 30px;
+}
+@media (min-width: 0px) and (max-width: 375px) {
+  margin-left: 16px;
+}
 }

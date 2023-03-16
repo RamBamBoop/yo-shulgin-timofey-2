@@ -26,6 +26,8 @@
 @import "catalog";
 @import "svg";
 @import "grid";
+@import "fonts";
+
 
 
 /*
@@ -153,7 +155,7 @@ html {
 
 .main__adaptive__container {
   @media (min-width: 375px) and (max-width: 768px) {
-    margin-left: 60px;
+    margin-left: 24px;
   }
 }
 
@@ -172,10 +174,11 @@ html {
 }
 
 .onc {
-  width: 307px;
+  width: 355px;
 }
 
 .pupa {
+  overflow: hidden;
   display: flex;
   gap: 25px;
 }
@@ -300,6 +303,7 @@ html {
   position: relative;
   align-items: center;
   justify-content: center;
+  min-width: 258px;
 }
 
 .categoryprod {
@@ -402,6 +406,9 @@ html {
   text-transform: uppercase;
   color: #1E0606;
   margin-bottom: 10px;
+  @media (min-width: 375px) and (max-width: 768px) {
+    font-size: 29px;
+}
 }
 
 .des__lifesec {
@@ -424,6 +431,9 @@ html {
   line-height: 22px;
   color: #1E0606;
   width: 486px;
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: 279px;
+}
 }
 .about__ussec {
   font-family: 'Crimson Text';
@@ -452,30 +462,48 @@ html {
 .div__back {
   background: #E1F0F7;
   width: 543px;
-  height: 228px;
+  // height: 228px;
   margin-bottom: 155px;
   margin-left: 30px;
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: 314px;
+    // height: 302px;
+}
 }
 
 .nad__footer {
   margin-left: 30px;
+      @media (min-width: 375px) and (max-width: 768px) {
+        margin-left: 15px;
+    }
 }
 
 .nad__footer__h__one {
   margin-left: 30px;
   margin-top: -25px;
+  @media (min-width: 375px) and (max-width: 768px) {
+    margin-left: 15px;
+}
 }
 
 .div__back__sec {
   background: #E1F0F7;
   width: 543px;
-  height: 228px;
+  height: auto;
   margin-bottom: 155px;
   margin-left: 30px;
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: 314px;
+    height: auto;
+}
 }
 
 .for__iframe {
   margin-top: 30px;
+  @media (min-width: 375px) and (max-width: 768px) {
+    width: 284px;
+    height: 151px;
+}
 }
 
 .popup {

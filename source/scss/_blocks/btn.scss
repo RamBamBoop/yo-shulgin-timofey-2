@@ -12,4 +12,14 @@
     height: 40px;
     left: 243px;
     top: 474px;*/
+    &:hover {
+    background: #C29974;   
 }
+    &:active {
+        background: #CFAF91;
+    }
+    &:disabled {
+        background: #C7C1C1;
+    }
+}
+

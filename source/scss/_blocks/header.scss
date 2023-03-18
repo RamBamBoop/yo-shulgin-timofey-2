@@ -43,7 +43,7 @@
 
 .header__list {
     display: flex;
-    gap: 0px 20px;
+    gap: 0px 15px;
     @media (min-width: 0px) and (max-width: 768px) {
         display: none;
     }
@@ -134,7 +134,7 @@
     line-height: 19px;
     text-transform: uppercase;
     color: #1E0606;
-    margin-left: 49px; 
+    margin-left: 241px; 
     @media (min-width: 375px) and (max-width: 768px) {
         display: block;
     }
@@ -172,5 +172,9 @@
 }
 
 .header__burger__section__full {
+    display: none;
     margin-left: 60px;
+    // @media (min-width: 375px) and (max-width: 768px) {
+    //     display: block;
+    // }
 }

@@ -79,11 +79,17 @@
 
 .marginleft {
     margin-left: 200px;
+    @media (min-width: 375px) and (max-width: 768px) {
+        margin-left: 0px;
+    }
 }
 
 .margintop {
     margin-left: 402px;
     margin-top: 42px;
+    @media (min-width: 375px) and (max-width: 768px) {
+        margin-left: 20px;
+    }
 }
 
 .proddesc {

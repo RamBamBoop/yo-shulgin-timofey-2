@@ -29,9 +29,9 @@
         <li><img src="./img/right.svg" alt="Right arrow" width="8" height="12"></li>
         <li>Toys</li>
     </ul>
-        <h2 class="h__two__op">Filter</h2><!--его надо будет скрыть так так его нет в дизайне-->
-        <div class="filter__block">
-            <form class="filter__list container" action="">
+        <h2 class="h__two__op">Filter</h2>
+        <div class="filter__block"><div class="adaptive__filter__first__part__filter">
+                      <form class="filter__list container" action="">
                 <fieldset class="range">
                     <label class="title__range" for="Cost">Cost</label>
                     <input type="range" name="Cost" id="Cost" min="0" max="500" step="1" value="100">
@@ -40,7 +40,8 @@
                         <label for="500">500</label>
                     </div>
                 </fieldset>
-                 <fieldset class="color__filter">
+                <div class="adaptive__filter__color__and__delivery">
+                    <fieldset class="color__filter">
                     <legend class="title__color">Color</legend>
                     <ul class="color__list">
                         <li>
@@ -77,8 +78,11 @@
                             Fast shipping
                         </label>
                     </div>
-                </fieldset>
-                <fieldset class="amount__filter">
+                </fieldset>  
+                </div>
+                </div>
+                <div class="adaptive__amount__apply">
+                    <fieldset class="amount__filter">
                      <legend class="title__amount">Amount</legend>
                      <ul class="amount__list">
                         <li class="amound-bg">
@@ -101,7 +105,8 @@
                         </li>
                      </ul>
                  </fieldset>
-                <button type="button" class="btn__filter">APPLY</button>
+                <button type="button" class="btn__filter">APPLY</button>    
+              </div>
             </form>
         </div>
     </main>

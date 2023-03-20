@@ -5,36 +5,137 @@
     <meta name="viewport" content="width=device-width">
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
-
     <title>DL Academy</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-
     <script>
       var docElement = document.documentElement;
       docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
     </script>
-
     <!-- Favicon -->
-
     <!-- build:css -->
     <link href="css/style.min.css" rel="stylesheet">
     <!-- endbuild -->
   </head>
   <body>
-    <div class="wrapper">
-      <main class="content">
-        <div class="coming-soon">
-          <h1 class="coming-soon__title">
-            <span>A</span>
-            <span>T</span>
-            <span>X</span>
-          </h1>
+    @@include('blocks/header.html')
+    <main class="main__adaptive__container">
+        <section class="banner__section__backgr container">
+            <div>
+                <p class="p__one">01</p>
+            <ul class="btn__block">
+                <li><button type="button" class="btn__line secgridgap"></button></li>
+                <li><button type="button" class="btn__line secgridgap"></button></li>
+                <li><button type="button" class="btn__line secgridgap"></button></li>
+                <li><button type="button" class="btn__line secgridgap"></button></li>
+            </ul>
+            </div>
+            <div class="banner__inner posrel">
+                <h1 class="title onc">THE OOH NOO COLLECTION</h1>
+                <p class="notion">Designed in Slovenia</p>
+                @@include('blocks/btn.html')
+                <img class="img_banner" src="./img/monster1.png" alt="Monster1" width="635" height="461">
+            </div>
+        <div class="utp">
+            <p class="banner__under__text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </div>
-      </main>
-      @@include('blocks/footer.html')
+        </section>
+    </main>
+    <section class="container">
+        <h2 class="categoryprod">Category Products</h2>
+        <ul class="pupa">
+            <li class="appkids alcent"><a href="#" class="akhsta apparelkids link__position">APPAREL KIDS</a><img class="apparelbackgr" src="./img/babysweater.png" alt="Baby sweater" width="244" height="177"></li>
+            <li class="holshop alcent"><a href="#" class="main__productions__holshop akhsta link__position">HOLIDAY SHOP</a><img src="./img/sockdeer.png" alt="Sock deer" width="208" height="244"></li>
+            <li class="toys alcent"><a href="./toys.html" class="akhsta link__position">TOYS</a><img src="./img/woodendeer.png" alt="Wooden figurine of a deer" width="270" height="270"></li>
+            <li class="accessories alcent"><a href="#" class="akhsta link__position">ACCESSORIES</a><img src="./img/monkeyontheskate.png" alt="monkey on a skateboard" width="240" height="250"></li>
+        </ul>
+        <ul class="pupaarrow">    
+        <li><button type="button" class="l__r__arrow"></button></li>
+        <li><button type="button" class="r__l__arrow"></button></li>
+        <li><p class="podpupa">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p></li>
+    </ul>
+    </section>
+    <section class="container pupa">
+        <img src="./img/officedress.jpg" alt="office dress" width="480" height="559">
+        <div class="megapupa okolotetki mleft">
+            <h2 class="delivery">DELIVERY</h2>
+            <ul>
+                <li class="secdelivery delgua"><a href="#">Delivery</a></li>
+                <li class="guarantee delgua"><a href="#">Guarantee</a></li>
+                <li class="credit delgua"><a href="#">Credit</a></li>
+            </ul>
+            <p class="somedays">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+            <p class="whatstarted">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+            <a href="#" class="link__infosec pright">LEARN MORE</a>
+        </div>
+    </section>
+    <section class="logos">
+        <ul class="logossec container partner__logos__gap">
+            <li>
+                <a href="https://mail.ru/"><img src="./img/mailru.png" alt="logotype mailru" width="193" height="60"></a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/"><img src="./img/apple.png" alt="logotype Apple" width="179" height="61"></a>
+            </li>
+            <li>
+                <a href="https://eltex-co.com/"><img src="./img/eltex.png" alt="logotype Eltex" width="216" height="46"></a>
+            </li>
+            <li>
+                <a href="https://www.owox.com/"><img src="./img/owox.png" alt="logotype Owox" width="211" height="40"></a>
+            </li>
+        </ul>
+    </section>
+    <section class="container des__con">
+    <div class="des_con_sec div__back">
+        <h2 class="des__life nad__footer__h__one">Design Life Kids</h2>
+        <p class="about__ussec nad__footer">About Us</p>
+        <p class="dome__says nad__footer">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+        <a href="/catalog.html" class="btnsec nad__footer">BUY NOW</a>
     </div>
-
-    <script src="js/app.js" defer></script>
+    <div class="des_con_sec div__back__sec">
+        <h2 class="des__lifesec nad__footer">Contacts</h2>
+        <p class="dome__says nad__footer">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+        <iframe class="nad__footer for__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.537027345575!2d49.28883502508566!3d53.512465281983786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879a82611632d%3A0xb18d94ffcf91e387!2zREwgQWNhZGVteSDigJQg0LrRg9GA0YHRiyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjw!5e0!3m2!1sru!2sru!4v1668783377206!5m2!1sru!2sru" width="483px" height="196px" frameborder="0"></iframe>
+    </div>
+    </section>
+      @@include('blocks/footer.html')
+      <div class="popup">
+        <div class="popup__wr">
+            <form method="post" action="#" class="contact__form">
+                <div class="container label__wrapper">
+                    <label class="contact__label" for="Name">Name</label>
+                    <input class="contact__input" type="text" placeholder="Ivan Ivanov">       
+                </div>
+                <div class="container input__element">
+                    <div class="label__wrapper">
+                        <label class="contact__label" for="Phone">Phone</label>
+                        <input class="contact__input-two" type="text">       
+                    </div>
+                    <div class="container label__wrapper">
+                        <label class="contact__label" for="Email">Email</label>
+                        <input class="contact__input-two" type="text">       
+                    </div>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li class="label__wrapper">
+                            <label class="contact__label" for="Message">Message</label>
+                            <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                        </li>
+                        <li class="checkbox_position">
+                            <input class="checkbox_input" id="checkbox" type="checkbox">
+                            <label class="checkbox__label" for="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
+                        </li>
+                    </ul>
+                    <button class="btn__submit" type="submit">SUBMIT</button>    
+                </div> 
+            </form>
+            <button type="button" class="close"></button>
+        </div> 
+        <div class="overlay"></div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>

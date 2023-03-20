@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <title>Contact-Us</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+    <!-- Favicon -->
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+</head>
+<body>
+    @@include('blocks/header.html')
+    <main class="container">
+        <section>
+            <h1 class="forhone">Contact Us</h1>
+            <ul class="displayflex firstgap">
+                <li><a href="/index.html" class="forhome">Home</a></li>
+                <li><img src="./img/right.svg" alt="Right arrow" class="martsev" width="8" height="12"></li>
+                <li><a href="/сontact-us.html" class="forcontactus brcrri">Contact us</a></li>
+            </ul>
+        </section>
+        <div class="main__sec">
+            <div class="popup__wr form__mar">
+                <form method="post" action="#" class="contact__form">
+                    <div class="container label__wrapper">
+                        <label class="contact__label" for="Name">Name</label>
+                        <input class="contact__input" type="text" placeholder="Ivan Ivanov">       
+                    </div>
+                    <div class="container input__element">
+                        <div class="label__wrapper">
+                            <label class="contact__label" for="Phone">Phone</label>
+                            <input class="contact__input-two" type="text">       
+                        </div>
+                        <div class="container label__wrapper">
+                            <label class="contact__label" for="Email">Email</label>
+                            <input class="contact__input-two" type="text">       
+                        </div>
+                    </div>
+                    <div class="container">
+                        <ul>
+                            <li class="label__wrapper">
+                                <label class="contact__label" for="Message">Message</label>
+                                <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                            </li>
+                            <li class="checkbox_position">
+                                <input class="checkbox_input" id="checkbox" type="checkbox">
+                                <label class="checkbox__label" for="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
+                            </li>
+                        </ul>
+                        <button class="btn__submit" type="submit">SUBMIT</button>    
+                    </div> 
+                </form>
+                <button type="button"></button>
+            </div>
+            <ul>
+            <li><p class="firstli marli">Our support team are on-hand to assist with any issues you are experiencing.</p></li>
+            <li><p class="firstli marli">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p></li>
+            <li><p class="thirdli">An expert is waiting to help you!</p></li>
+            </ul>
+        </div>
+    </main>
+    @@include('blocks/footer.html')
+</body>
+</html>

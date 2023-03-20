@@ -1,0 +1,180 @@
+.header {
+    display: flex; /*задает блок*/
+    margin-top: 50px; /*отступ сверху*/
+    margin-bottom: 128px;
+    align-items: center;
+    @media (min-width: 375px) and (max-width: 768px) {
+        margin-left: 2px;
+    }
+    @media (min-width: 0px) and (max-width: 375px) {
+        margin-left: 0px;
+    }
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__logo {
+    margin-right: 60px; /*отступ от лого вправо до меню*/
+    min-width: 100px;
+    min-height: 52px;
+    @media (min-width: 375px) and (max-width: 768px) {
+        width: 62px;
+        height: 32px;
+    }
+    @media (min-width: 375px) and (max-width: 768px) {
+        margin-right: 55px;
+    }
+    @media (min-width: 375px) and (max-width: 1131px) {
+        margin-right: 45px;
+    }
+    @media (min-width: 375px) and (max-width: 1112px) {
+        margin-right: 33px;
+    }
+    @media (min-width: 375px) and (max-width: 1091px) {
+        margin-right: 28px;
+    }
+    @media (min-width: 0px) and (max-width: 375px) {
+        width: 42px;
+        height: 22px;
+    }
+}
+
+.header__list {
+    display: flex;
+    gap: 0px 15px;
+    @media (min-width: 0px) and (max-width: 768px) {
+        display: none;
+    }
+    @media (min-width: 375px) and (max-width: 1131px) {
+        gap: 0px 17px;
+    }
+    @media (min-width: 375px) and (max-width: 1112px) {
+        gap: 0px 13px;
+    }
+    @media (min-width: 375px) and (max-width: 1091px) {
+        gap: 0px 12px;
+    }
+}
+
+.header__list-link {
+    @include osans;
+    &__contact {
+        min-width: 92px;
+        min-height: 23px;
+    }
+    &__svg {
+        min-width: 33px;
+        min-height: 20px;
+    }
+    &__animation {
+        min-width: 78px;
+        min-height: 20px;
+    }
+    &__blog {
+        min-width: 38px;
+        min-height: 20px;
+    }
+    &__about {
+        min-width: 69px;
+        min-height: 20px;
+    }
+    &__catalog {
+        min-width: 63px;
+        min-height: 20px;
+    }
+    @media (min-width: 375px) and (max-width: 1131px) {
+        min-height: 20px;
+    }
+}
+
+.header__navigate {
+    min-width: 33px;
+    min-height: 20px;
+}
+
+.header__list-linksec {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+.search {
+    margin-right: 24px;
+    margin-left: 469px;
+    @media (min-width: 375px) and (max-width: 768px) {
+       margin-left: 450px; 
+    }
+    @media (min-width: 375px) and (max-width: 1131px) {
+        margin-left: 416px;
+    }
+    @media (min-width: 375px) and (max-width: 1112px) {
+        margin-left: 390px;
+    }
+    @media (min-width: 375px) and (max-width: 1091px) {
+        margin-left: 265px;
+    }
+}
+
+.left {
+    margin-right: auto;
+}
+
+.header__menu__button {
+    display: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E0606;
+    margin-left: 241px; 
+    @media (min-width: 375px) and (max-width: 768px) {
+        display: block;
+    }
+}
+
+.header__burger__h {
+    display: none;
+}
+
+.burger__menu {
+    background-color: #fff;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 150%;
+    height: auto;
+    &__open {
+        display: block;
+    }
+}
+
+.header__list__burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.header__burger__section {
+    // margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__burger__section__full {
+    display: none;
+    margin-left: 60px;
+    // @media (min-width: 375px) and (max-width: 768px) {
+    //     display: block;
+    // }
+}

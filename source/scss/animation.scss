@@ -1,0 +1,375 @@
+.animation__hthree {
+    display: none;
+}
+
+.main__breadcrumb {
+    margin-bottom: 188px;
+}
+
+.animation__clouds {
+    display: flex;
+}
+
+.animation__first__cloud {
+    position: absolute;
+    top: 285px;
+    left: 80px;
+    animation: one 3s ease-in 1s infinite reverse;
+}
+
+@keyframes one {
+    0% {
+        left: 80px;
+    }
+    100% {
+        left: 120px;
+    }
+}
+
+@keyframes three {
+    0% {
+        left: 612px;
+    }
+    100% {
+        left: 627px;
+    }
+}
+
+@keyframes six {
+    0% {
+        left: 1257px;
+    }
+    100% {
+        left: 1277px;
+    }
+}
+
+.animation__second__cloud {
+    position: absolute;
+    left: 355px;
+    top: 319px;
+}
+
+.animation__third__cloud {
+    position: absolute;
+    left: 612px;
+    top: 283px;
+    animation: three 3s ease-in 1s infinite reverse;
+}
+
+.animation__fourth__cloud {
+    position: absolute;
+    left: 725px;
+    top: 366px;
+}
+
+.animation__fiveth__cloud {
+    position: absolute;
+    left: 1018px;
+    top: 319px;
+}
+
+.animation__sun {
+    position: absolute;
+    top: 273px;
+    left: 1168px;
+}   
+
+.animation__sixth__cloud {
+    position: absolute;
+    left: 1257px;
+    top: 315px;
+    animation: six 3s ease-in 1s infinite reverse;
+}
+
+.animation__woman {    
+    position: absolute;
+    left: 273px;
+    top: 749px;
+    z-index: 1;
+}
+
+.animation__womans__bags {
+    position: absolute;
+    left: 264px;
+    top: 923px;
+    z-index: 1;
+}
+
+.animation__man__without__hand {
+    position: absolute;
+    left: 380px;
+    top: 662px;
+    z-index: 1;
+}
+
+.animation__lamp__front {    
+    position: absolute;
+    left: 1119px;
+    top: 468px;
+    z-index: 1;
+}
+
+.animation__lamp__behind {
+    position: absolute;
+    top: 447px;
+    left: 432px;
+}
+
+.animation__lamp__behind__sec {
+    position: absolute;
+    top: 447px;
+    left: 1307px;
+}
+
+.animation__backgr {
+    margin-bottom: 70px;
+    z-index: 500;
+}
+
+.animation__car__one {
+    position: absolute;
+    top: 748px;
+    left: -252px;
+    animation: onecar 5s ease-in 1s infinite ;
+}
+
+@keyframes onecar {
+    0% {
+        left: -252px;
+    }
+    50% {
+        left: 756px;
+    }
+    100% {
+        left: 1800px;
+    }
+}
+
+.animation__car__two {
+    position: absolute;
+    top: 748px;
+    left: -252px;
+    animation: twocar 11s ease-in 1s infinite ;
+}
+
+@keyframes twocar {
+    0% {
+        left: -252px;
+    }
+    100% {
+        left: 1800px;
+    }
+}
+
+.animation__car__three {
+    position: absolute;
+    top: 780px;
+    left: -252px;
+    animation: threecar 6s ease-in 1s infinite ;
+}
+
+@keyframes threecar {
+    0% {
+        left: -252px;
+    }
+    100% {
+        left: 1800px;
+    }
+}
+
+.animation__car__four {
+    position: absolute;
+    top: 732px;
+    left: -252px;
+    animation: fourcar 3s ease-in 1s infinite;
+}
+
+@keyframes fourcar {
+    0% {
+        left: -252px;
+    }
+    100% {
+        left: 1800px;
+    }
+}
+
+.animation__taxi__car {
+    position: absolute;
+    top: 728px;
+    left: 1800px;
+    animation: taxicar 6s ease-in 5s 1;
+}
+
+@keyframes taxicar {
+    0% {
+        left: 1800px;
+    }
+    40% {
+        left: 553px;
+    }
+    50% {
+        left: 553px;
+    }
+    60% {
+        left: 553px;
+    }
+    80% {
+        left: 553px;
+    }
+    100% {
+        left: -2000px;
+    }
+}
+
+.animation__woman__mess {
+    position: absolute;
+    top: 641px;
+    left: 178px;
+    opacity: 0%;
+    animation: wommess 4s ease-in 2s 1;
+}
+
+@keyframes wommess {
+    0% {
+        opacity: 0%;
+    }
+    30% {
+        opacity: 50%;
+    }
+    40% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    60% {
+        opacity: 100%;
+    }
+    70% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.animation__taxist__mess {
+    left: 843px;
+    position: absolute;
+    top: 646px;
+    opacity: 0%;
+    animation: taximess 6s ease-in 6s 1;
+}
+
+@keyframes taximess {
+    0% {
+        opacity: 0%;
+    }
+    10% {
+        opacity: 0%;
+    }
+    34% {
+        opacity: 100%;
+    }
+    40% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    65% {
+        opacity: 0%;
+    }
+    75% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}    
+
+.animation__man__mess {   
+    position: absolute;
+    left: 366px;
+    top: 575px; 
+    opacity: 0%;
+    animation: manmess 3s ease-in 4s 1;
+    z-index: 1;
+}
+
+@keyframes manmess {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    80% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.animation__man__hand {
+    position: absolute;
+    left: 397px;
+    top: 608px;
+    animation: manhand 4s ease-in 4s 1;
+    transform: rotateZ(122deg);
+    transform-origin:  0% 100%;
+}
+
+@keyframes manhand {
+    0% {
+        transform: rotateZ(119deg); 
+    }
+    30% {
+        transform: rotateZ(0deg); 
+    }
+    50% {
+        transform: rotateZ(0deg); 
+    }
+    70% {
+        transform: rotateZ(0deg); 
+    }
+    85% {
+        transform: rotateZ(0deg); 
+    }
+    100% {
+        transform: rotate(120deg); 
+    }
+}
+
+.animation__woman__hands {
+    left: 303px;
+    position: absolute;
+    top: 866px;
+    z-index: 1;
+    animation: womhand 2s ease-in 2s 1;
+    transform-origin: 0% 0%;
+}
+
+@keyframes womhand {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    35% {
+        transform: rotateZ(-70deg);
+    }
+    50% {
+        transform: rotateZ(-70deg);
+    }
+    68% {
+        transform: rotateZ(-70deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.animation {
+    overflow: hidden;
+}

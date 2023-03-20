@@ -1,5 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*сжимается внутренний контент под общий размер*/
+}
+
+body {
+  font-family: 'Montserrat';
+  font-style: normal; /*жирный, наклонный или др*/
+  font-size: 14px;
+  line-height: 19px; /*межстрочный интервал*/
+  color: #1E0606;
+}
+
+a {
+  /*list-style: none; /*убирает маркер списка точку?*/
+  text-decoration: none; /*убирает подчеркивание*/
+  /* color: none; */
+}
+
+img {
+  display: block; /* блочные элементы, можем задать высоту и ширину*/
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none; /*прописать во всех списках li, убирает точку в списках*/
+}
+
+button {
+  border: none;
+}
+
 .container {
-  padding: 0 20px;
+  max-width: 1180px;
   margin: 0 auto;
-  max-width: 1220px;
+  @media (min-width: 375px) and (max-width: 768px) {
+    padding-left: 50px;
+}
+@media (min-width: 0px) and (max-width: 375px) {
+  padding-left: 20px;
+}
 }
